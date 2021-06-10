@@ -37,12 +37,13 @@ function draw() {
     line(0, 400, width, 400);
     strokeWeight(1);
     textSize(25);
+    strokeWeight(0);
     text('Using sin(x)', 10, 50);
     pends.forEach((pend, index) => {
         fill(0)
         stroke(0);
-        strokeWeight(1);
-        text(`${(index == 0) ? ('Red') : ('Blue')} starting angle: pi/${PI / pend.maxAngle}`, 10, 300 + 25 * (index + 1));
+        strokeWeight(0);
+        text(`${(index == 0) ? ('Red') : ('Blue')} starting angle: PI/${PI / pend.maxAngle}`, 10, 300 + 25 * (index + 1));
         strokeWeight(1);
         if (index == 0) {
             fill(255, 0, 0);
@@ -63,6 +64,7 @@ function draw() {
         }
         beginShape();
         noFill();
+        strokeWeight(2);
         if (index == 0) {
             stroke(255, 0, 0);
         } else {
@@ -74,16 +76,15 @@ function draw() {
         endShape();
         stroke(0);
         fill(0);
-        strokeWeight(1);
-
+        strokeWeight(0);
     });
 
     text('Using sin(x)=x', 410, 50);
     approx.forEach((pend, index) => {
         fill(0)
         stroke(0);
-        strokeWeight(1);
-        text(`${(index == 0) ? ('Red') : ('Blue')} starting angle: pi/${PI / pend.maxAngle}`, 10, 300 + 25 * (index + 1));
+        strokeWeight(0);
+        text(`${(index == 0) ? ('Red') : ('Blue')} starting angle: PI/${PI / pend.maxAngle}`, 10, 300 + 25 * (index + 1));
         strokeWeight(1);
         if (index == 0) {
             fill(255, 0, 0);
@@ -104,6 +105,7 @@ function draw() {
         }
         beginShape();
         noFill();
+        strokeWeight(2);
         if (index == 0) {
             stroke(255, 0, 0);
         } else {
@@ -119,6 +121,7 @@ function draw() {
     });
 
     textSize(10);
+    strokeWeight(0);
     text('*air resistence and friction are neglected', 600, 780);
     //console.log(pends[0].velocity.x);
 }
