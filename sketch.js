@@ -10,12 +10,12 @@ let blue, red;
 function setup() {
     createCanvas(800, 800);
     //pend.init();
-    pends.push(new Pendulum(200, 10, 200, blueAngle));
     pends.push(new Pendulum(200, 10, 200, redAngle));
+    pends.push(new Pendulum(200, 10, 200, blueAngle));
     pends.forEach(pend => pend.init());
 
-    approx.push(new Approx(600, 10, 200, blueAngle));
     approx.push(new Approx(600, 10, 200, redAngle));
+    approx.push(new Approx(600, 10, 200, blueAngle));
     approx.forEach(pend => pend.init());
     //console.log(pend);
 
