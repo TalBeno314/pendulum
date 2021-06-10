@@ -3,8 +3,8 @@ let approx = [];
 let max;
 let dt = 1;
 let frame = 60;
-let blueAngle = Math.PI / 15;
-let redAngle = Math.PI / 10;
+let blueAngle = Math.PI / 10;
+let redAngle = Math.PI / 15;
 let blue, red;
 
 function setup() {
