@@ -42,7 +42,7 @@ function draw() {
         fill(0)
         stroke(0);
         strokeWeight(1);
-        text(`${(index == 0) ? ('Blue') : ('Red')} starting angle: pi/${PI / pend.maxAngle}`, 10, 300 + 25 * (index + 1));
+        text(`${(index == 0) ? ('Red') : ('Blue')} starting angle: pi/${PI / pend.maxAngle}`, 10, 300 + 25 * (index + 1));
         strokeWeight(1);
         if (index == 0) {
             fill(255, 0, 0);
@@ -83,7 +83,7 @@ function draw() {
         fill(0)
         stroke(0);
         strokeWeight(1);
-        text(`${(index == 0) ? ('Blue') : ('Red')} starting angle: pi/${PI / pend.maxAngle}`, 10, 300 + 25 * (index + 1));
+        text(`${(index == 0) ? ('Red') : ('Blue')} starting angle: pi/${PI / pend.maxAngle}`, 10, 300 + 25 * (index + 1));
         strokeWeight(1);
         if (index == 0) {
             fill(255, 0, 0);
