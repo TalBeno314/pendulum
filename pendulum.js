@@ -1,4 +1,5 @@
 class Pendulum {
+    wave = [];
     velocity = 0;
     acceleration = 0;
 
@@ -31,6 +32,7 @@ class Pendulum {
 }
 
 class Approx {
+    wave = [];
     velocity = 0;
     acceleration = 0;
 
