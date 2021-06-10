@@ -58,6 +58,9 @@ function draw() {
             pend.angle = pend.maxAngle;
         }
         pend.wave.unshift(pend.x);
+        if (pend.wave.length > 400) {
+            pend.wave.pop();
+        }
         beginShape();
         noFill();
         if (index == 0) {
@@ -96,6 +99,9 @@ function draw() {
             pend.angle = pend.maxAngle;
         }
         pend.wave.unshift(pend.x);
+        if (pend.wave.length > 400) {
+            pend.wave.pop();
+        }
         beginShape();
         noFill();
         if (index == 0) {
@@ -110,7 +116,6 @@ function draw() {
         stroke(0);
         fill(0);
         strokeWeight(1);
-
     });
 
     textSize(10);
