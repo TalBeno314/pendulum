@@ -55,9 +55,9 @@ function draw() {
         fill(0);
         line(pend.pivot.x, pend.pivot.y, pend.pivot.x + pend.x, pend.pivot.y + pend.y);
         pend.update(dt);
-        if (pend.angle > pend.maxAngle) {
+        /*if (pend.angle > pend.maxAngle) {
             pend.angle = pend.maxAngle;
-        }
+        }*/
         pend.wave.unshift(pend.x);
         if (pend.wave.length > 400) {
             pend.wave.pop();
@@ -96,9 +96,9 @@ function draw() {
         fill(0);
         line(pend.pivot.x, pend.pivot.y, pend.pivot.x + pend.x, pend.pivot.y + pend.y);
         pend.update(dt);
-        if (pend.angle > pend.maxAngle) {
+        /*if (pend.angle > pend.maxAngle) {
             pend.angle = pend.maxAngle;
-        }
+        }*/
         pend.wave.unshift(pend.x);
         if (pend.wave.length > 400) {
             pend.wave.pop();
